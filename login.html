@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="robots" content="noindex, nofollow">
+
+        <link rel="shortcut icon" href="static/img/favicon/favicon.ico" type="image/x-icon">
+
+        <title>CRT Login</title>
+
+        <link rel="stylesheet" href="static/css/main.css">
+    </head>
+
+  <body>
+
+    <header>
+        <div class="header-migov">
+            <div>
+                <span class="migov-link-bold">Michigan.</span>
+                <span class="migov-link-lite">gov</span>
+            </div>
+
+            <a class="leo-link-sml" href="https://milogin.michigan.gov/eai/login/authenticate">MiLogin Home</a>
+        </div>
+
+        <div class="header-leo">
+            <a class="leo-link-lrg" accesskey="1" href="https://michigan.gov/leo/" title="Labor and Economic Opportunity - Labor and Economic Opportunity">
+                <div>
+                    <div class="leo-link-lrg-text-sml">The Department of</div>
+                    <div class="leo-link-lrg-text-lrg">Labor and Economic Opportunity</div>
+                </div>
+            </a>
+        </div>
+    </header>
+    
+    <main id="mainContent">
+        <section id="incorrect-referrer" class="intro-block">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="section-title">Central Response Team Login</h1>
+                        <p class="section-description" hidden>It appears that you have come to this page from a different link. Please visit <a href=https://www.michigan.gov/uia>UIA home page</a> to start a claim or login to your account.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-block light" aria-label="Login Form">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <form id="form-login">
+                            <div class="row">
+                                <div class="col-12 form-set-required">
+                                    <label for="login-username" class="set-label">Username</label>
+                                    <input type="text" class="set-input" id="login-username" data-db-field-name="username" required>
+                                </div>
+
+                                <div class="col-12 form-set-required">
+                                    <label for="login-password" class="set-label">Password</label>
+                                    <input type="password" class="set-input" id="login-password" data-db-field-name="password" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-brand mt-4" data-form-submit-target="form-login">Login</button>
+
+                                    <div class="form-spinner" data-form-loading-target="form-login">
+                                        <div class="spinner-border" role="status">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="form-results" data-form-results-target="form-login">
+                            <div class="results-success">
+                                <p><b>Thank you, your information has been submitted.</b></p>
+                                <p>Return to <a href="https://www.michigan.gov/uia/">Unemployment Insurance Agency Home page</a>.</p>
+                            </div>
+
+                            <div class="results-fail">
+                                <p><b>There was an error in processing your request. Please try again later.</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+    
+    <script src="static/js/main.js"></script>
+
+  </body>
+</html>

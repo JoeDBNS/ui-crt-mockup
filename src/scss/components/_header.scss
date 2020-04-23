@@ -1,0 +1,55 @@
+header {
+    .header-migov {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4px 20px;
+    }
+    .migov-link-bold {
+        font-size: 1.2rem;
+        font-weight: 900;
+    }
+    .leo-link-sml {
+        font-size: .75rem;
+        line-height: 26px;
+        vertical-align: middle;
+        color: black;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .leo-link-sml:hover {
+        text-decoration: underline;
+    }
+    .header-leo {
+        background-color: #28807C;
+    }
+    .leo-link-lrg {
+        display: block;
+        max-width: 1200px;
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        padding: 14px 20px;
+        color: white;
+        text-decoration: none;
+    }
+    .leo-link-lrg:hover a {
+        color: #e6e6e6;
+        text-decoration: none;
+    }
+    .leo-link-lrg-text-sml, .leo-link-lrg-text-lrg {
+        text-transform: none !important;
+    }
+    .leo-link-lrg-text-sml {
+        font-size: .7em;
+    }
+    .leo-link-lrg-text-lrg {
+        font-size: 2.6em;
+        font-weight: 600;
+        line-height: .9;
+    }
+}

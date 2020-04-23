@@ -1,0 +1,28 @@
+.link-block {
+	@extend .flex-comp;
+	overflow: hidden;
+	background-color: $brand-bg;
+	.container-xl {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+	.link-set {
+		@extend .flex-comp;
+        margin-bottom: 2.25rem;
+        a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 2rem;
+        }
+        .btn {
+            margin: 20px 0;
+        }
+	}
+	.link-set-bottom {
+		@extend .flex-comp;
+        margin-top: 0.75rem;
+        .btn {
+            margin: 20px 0;
+        }
+	}
+}

@@ -1,0 +1,18 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px
+);
+
+$body-color: #53535A;
+
+$brand: #1D4154 !default;
+$brand-secondary: $brand !default;
+
+$brand-green: #90BB54 !default;
+$brand-yellow: #F7CC65 !default;
+$brand-orange: #FF9200 !default;
+
+$brand-gray: #EFEFEF !default;
+$brand-bg: #fafafa !default;

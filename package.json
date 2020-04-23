@@ -1,0 +1,21 @@
+{
+  "name": "ui-crt-mockup",
+  "version": "1.0.0",
+  "description": "Internal issue tracker for UI",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeDBNS/ui-crt-mockup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoeDBNS/ui-crt-mockup/issues"
+  },
+  "homepage": "https://github.com/JoeDBNS/ui-crt-mockup#readme"
+}
