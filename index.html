@@ -52,67 +52,9 @@
             <div class="container-xl">
                 <div class="row">
                     <div class="col-12">
-                        <!-- Source for duplicated form sections -->
-                        <div class="row mt-5" data-form-page-source hidden>
-                            <div class="col-12 form-header">Issue Request #<span class="form-page-number"></span></div>
-
-                            <div class="col-12 col-md-6 form-set-required">
-                                <label for="contact-first-name" class="set-label">First Name</label>
-                                <input type="text" class="set-input" id="contact-first-name" data-db-field-name="first_name" required>
-                            </div>
-
-                            <div class="col-12 col-md-6 form-set-required">
-                                <label for="contact-last-name" class="set-label">Last Name</label>
-                                <input type="text" class="set-input" id="contact-last-name" data-db-field-name="last_name" required>
-                            </div>
-
-                            <div class="col-12 col-md-6 form-set-required">
-                                <label for="contact-phone" class="set-label">Phone Number</label>
-                                <input type="tel" class="set-input" id="contact-phone" maxlength="14" data-db-field-name="phone" required data-regex-check="tel">
-                            </div>
-
-                            <div class="col-12 col-md-6 form-set">
-                                <label for="contact-email" class="set-label">Email Address</label>
-                                <input type="email" class="set-input" id="contact-email" data-db-field-name="email" data-regex-check="email">
-                            </div>
-
-                            <div class="col-12 col-md-6 form-set">
-                                <label for="contact-claim-id" class="set-label">Claim Number</label>
-                                <input type="text" class="set-input" id="contact-claim-id" data-db-field-name="claimid">
-                            </div>
-
-                            <div class="col-12 col-md-6 form-set">
-                                <label for="contact-letter-id" class="set-label">Letter Number</label>
-                                <input type="text" class="set-input" id="contact-letter-id" data-db-field-name="letterid">
-                            </div>
-
-                            <div class="col-12 col-md-6 form-set">
-                                <label for="contact-issue-date" class="set-label">Issue Date</label>
-                                <input type="date" class="set-input" id="contact-issue-date" data-db-field-name="issuedate">
-                            </div>
-
-                            <div class="col-12 col-md-6 form-set-required">
-                                <label for="contact-issue-subject" class="set-label">Issue Subject</label>
-                                <select class="set-input" name="contact-issue-subject" id="contact-issue-subject" data-db-field-name="issuesubject" required>
-                                    <option value=""></option>
-                                    <option>MILogin Password</option>
-                                    <option>MIWAM Account Locked</option>
-                                    <option>Claim Filing Issue</option>
-                                    <option>Certification Issue</option>
-                                    <option>Payment Issue</option>
-                                    <option>Other General Information</option>
-                                </select>
-                            </div>
-
-                            <div class="col-12 col-md-12 form-set-required">
-                                <label for="contact-issue" class="set-label">Issue Description</label>
-                                <textarea class="set-textarea" id="contact-issue" data-db-field-name="issue" required></textarea>
-                            </div>
-                        </div>
-
                         <form id="form-contact">
-                            <div class="row" data-form-page-source>
-                                <div class="col-12 form-header">Issue Request #1</div>
+                            <div class="row">
+                                <div class="col-12 form-header">Issue Details</div>
 
                                 <div class="col-12 col-md-6 form-set-required">
                                     <label for="contact-first-name" class="set-label">First Name</label>
@@ -146,7 +88,7 @@
 
                                 <div class="col-12 col-md-6 form-set">
                                     <label for="contact-issue-date" class="set-label">Issue Date</label>
-                                    <input type="date" class="set-input" id="contact-issue-date" data-db-field-name="issuedate">
+                                    <input type="date" class="set-input" id="contact-issue-date" data-db-field-name="issuedate" data-set-default-date-today>
                                 </div>
 
                                 <div class="col-12 col-md-6 form-set-required">
@@ -162,19 +104,15 @@
                                     </select>
                                 </div>
 
-                                <div class="col-12 col-md-12 form-set-required">
+                                <div class="col-12 col-md-12 form-set">
                                     <label for="contact-issue" class="set-label">Issue Description</label>
-                                    <textarea class="set-textarea" id="contact-issue" data-db-field-name="issue" required></textarea>
+                                    <textarea class="set-textarea" id="contact-issue" data-db-field-name="issue"></textarea>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-12">
-                                    <button type="button" id="btn-add-issue" class="btn btn-brand mt-4" data-hide-on-submit>Add Another Issue</button>
-                                </div>
-
-                                <div class="col-12">
-                                    <button type="button" class="btn btn-brand mt-4" data-form-submit-target="form-contact" data-hide-on-submit>Submit Issues</button>
+                                    <button type="button" class="btn btn-brand mt-4" data-form-submit-target="form-contact" data-hide-on-submit>Submit Issue</button>
 
                                     <div class="form-spinner" data-form-loading-target="form-contact">
                                         <div class="spinner-border" role="status">

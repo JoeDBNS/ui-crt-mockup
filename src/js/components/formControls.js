@@ -7,13 +7,12 @@ input_tel_list.forEach(function(input) {
 });
 
 
-var add_issue_button = document.querySelector('#btn-add-issue');
+// Set default date value
+var def_date_list = document.querySelectorAll('[data-set-default-date-today]');
 
-if (add_issue_button) {
-    add_issue_button.addEventListener('click', function() {
-        AddIssuePage();
-    });
-}
+def_date_list.forEach(function(input) {
+    input.valueAsDate = new Date();
+});
 
 
 function SetupFormListeners() {
@@ -21,7 +20,7 @@ function SetupFormListeners() {
         $('[data-form-submit-target]').each(function() {
             let form_submit_button = $('[data-form-submit-target]');
             let form = $('#' + $(form_submit_button).attr('data-form-submit-target'));
-            let form_inputs = $('#' + form.attr('id') + ' input, ' + '#' + form.attr('id') + ' textarea');
+            let form_inputs = $('#' + form.attr('id') + ' input, ' + '#' + form.attr('id') + ' textarea, ' + '#' + form.attr('id') + ' select');
 
             SetupInputListeners(form_inputs);
 
