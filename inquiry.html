@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="robots" content="noindex, nofollow">
+
+        <link rel="shortcut icon" href="static/img/favicon/favicon.ico" type="image/x-icon">
+
+        <title>CRT Request</title>
+
+        <link rel="stylesheet" href="static/css/main.css">
+    </head>
+
+  <body>
+
+    <header>
+        <div class="header-migov">
+            <div>
+                <span class="migov-link-bold">Michigan.</span>
+                <span class="migov-link-lite">gov</span>
+            </div>
+
+            <!-- <a class="leo-link-sml" href="https://milogin.michigan.gov/eai/login/authenticate">MiLogin Home</a> -->
+            <a class="leo-link-sml" href="/login.html">Logout</a>
+        </div>
+
+        <div class="header-leo">
+            <a class="leo-link-lrg" accesskey="1" href="https://michigan.gov/leo/" title="Labor and Economic Opportunity - Labor and Economic Opportunity">
+                <div>
+                    <div class="leo-link-lrg-text-sml">The Department of</div>
+                    <div class="leo-link-lrg-text-lrg">Labor and Economic Opportunity</div>
+                </div>
+            </a>
+        </div>
+    </header>
+    
+    <main id="mainContent">
+        <section class="intro-block" aria-label="Contact Us For LEO MiLogin Issues">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="section-title">CRT Inquiry Submission Form</h1>
+                        <p class="section-description">Please use this form to report your technical issue relating to the Unemployment Information system.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-block light" aria-label="Contact Us Form">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-12">
+                        <form id="form-contact">
+                            <div class="row">
+                                <div class="col-12 form-header">Inquiry Details</div>
+
+                                <div class="col-12 col-md-6 form-set-required">
+                                    <label for="contact-first-name" class="set-label">First Name</label>
+                                    <input type="text" class="set-input" id="contact-first-name" data-db-field-name="first_name" required>
+                                </div>
+
+                                <div class="col-12 col-md-6 form-set-required">
+                                    <label for="contact-last-name" class="set-label">Last Name</label>
+                                    <input type="text" class="set-input" id="contact-last-name" data-db-field-name="last_name" required>
+                                </div>
+
+                                <div class="col-12 col-md-6 form-set-required">
+                                    <label for="contact-phone" class="set-label">Phone Number</label>
+                                    <input type="tel" class="set-input" id="contact-phone" maxlength="14" data-db-field-name="phone" required data-regex-check="tel">
+                                </div>
+
+                                <div class="col-12 col-md-6 form-set">
+                                    <label for="contact-email" class="set-label">Email Address</label>
+                                    <input type="email" class="set-input" id="contact-email" data-db-field-name="email" data-regex-check="email">
+                                </div>
+
+                                <div class="col-12 col-md-6 form-set">
+                                    <label for="contact-claim-id" class="set-label">Claim Number</label>
+                                    <input type="text" class="set-input" id="contact-claim-id" data-db-field-name="claimid">
+                                </div>
+
+                                <div class="col-12 col-md-6 form-set">
+                                    <label for="contact-letter-id" class="set-label">Letter Number</label>
+                                    <input type="text" class="set-input" id="contact-letter-id" data-db-field-name="letterid">
+                                </div>
+
+                                <div class="col-12 col-md-6 form-set-required">
+                                    <label for="contact-issue-date" class="set-label">Inquiry Date</label>
+                                    <input type="date" class="set-input" id="contact-issue-date" data-db-field-name="issuedate" required data-set-default-date-today>
+                                </div>
+
+                                <div class="col-12 col-md-6 form-set-required">
+                                    <label for="contact-issue-subject" class="set-label">Inquiry Subject</label>
+                                    <select class="set-input" name="contact-issue-subject" id="contact-issue-subject" data-db-field-name="issuesubject" required>
+                                        <option value=""></option>
+                                        <option>MILogin Password</option>
+                                        <option>MIWAM Account Locked</option>
+                                        <option>Claim Filing Issue</option>
+                                        <option>Certification Issue</option>
+                                        <option>Payment Issue</option>
+                                        <option>Other General Information</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12 col-md-12 form-set">
+                                    <label for="contact-issue" class="set-label">Inquiry Description</label>
+                                    <textarea class="set-textarea" id="contact-issue" data-db-field-name="issue"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-brand mt-4" data-form-submit-target="form-contact" data-hide-on-submit>Submit Inquiry</button>
+
+                                    <div class="form-spinner" data-form-loading-target="form-contact">
+                                        <div class="spinner-border" role="status">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="form-results" data-form-results-target="form-contact">
+                            <div class="results-success">
+                                <p><b>Thank you, your information has been submitted.</b></p>
+                                <p>Return to <a href="https://www.michigan.gov/uia/">Unemployment Insurance Agency Home page</a>.</p>
+                            </div>
+
+                            <div class="results-fail">
+                                <p><b>There was an error in processing your request. Please try again later.</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+    
+    <script src="static/js/main.js"></script>
+
+  </body>
+</html>
