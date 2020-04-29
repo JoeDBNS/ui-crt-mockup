@@ -42,7 +42,7 @@
             <div class="container-xl">
                 <div class="row">
                     <div class="col-12">
-                        <h1 class="section-title">CRT Issue Submission Form</h1>
+                        <h1 class="section-title">CRT Inquiry Submission Form</h1>
                         <p class="section-description">Please use this form to report your technical issue relating to the Unemployment Information system.</p>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                     <div class="col-12">
                         <form id="form-contact">
                             <div class="row">
-                                <div class="col-12 form-header">Issue Details</div>
+                                <div class="col-12 form-header">Inquiry Details</div>
 
                                 <div class="col-12 col-md-6 form-set-required">
                                     <label for="contact-first-name" class="set-label">First Name</label>
@@ -87,13 +87,13 @@
                                     <input type="text" class="set-input" id="contact-letter-id" data-db-field-name="letterid">
                                 </div>
 
-                                <div class="col-12 col-md-6 form-set">
-                                    <label for="contact-issue-date" class="set-label">Issue Date</label>
-                                    <input type="date" class="set-input" id="contact-issue-date" data-db-field-name="issuedate" data-set-default-date-today>
+                                <div class="col-12 col-md-6 form-set-required">
+                                    <label for="contact-issue-date" class="set-label">Inquiry Date</label>
+                                    <input type="date" class="set-input" id="contact-issue-date" data-db-field-name="issuedate" required data-set-default-date-today>
                                 </div>
 
                                 <div class="col-12 col-md-6 form-set-required">
-                                    <label for="contact-issue-subject" class="set-label">Issue Subject</label>
+                                    <label for="contact-issue-subject" class="set-label">Inquiry Subject</label>
                                     <select class="set-input" name="contact-issue-subject" id="contact-issue-subject" data-db-field-name="issuesubject" required>
                                         <option value=""></option>
                                         <option>MILogin Password</option>
@@ -106,14 +106,14 @@
                                 </div>
 
                                 <div class="col-12 col-md-12 form-set">
-                                    <label for="contact-issue" class="set-label">Issue Description</label>
+                                    <label for="contact-issue" class="set-label">Inquiry Description</label>
                                     <textarea class="set-textarea" id="contact-issue" data-db-field-name="issue"></textarea>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-12">
-                                    <button type="button" class="btn btn-brand mt-4" data-form-submit-target="form-contact" data-hide-on-submit>Submit Issue</button>
+                                    <button type="button" class="btn btn-brand mt-4" data-form-submit-target="form-contact" data-hide-on-submit>Submit Inquiry</button>
 
                                     <div class="form-spinner" data-form-loading-target="form-contact">
                                         <div class="spinner-border" role="status">
